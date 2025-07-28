@@ -1,5 +1,7 @@
 # Gen_AI_Celebal
+
 =======
+
 # Loan Application Q&A Chatbot
 
 An intelligent chatbot that uses Retrieval Augmented Generation (RAG) to answer questions about loan applications. The system combines advanced natural language processing with statistical analysis to provide comprehensive insights about loan applications, approval factors, and trends.
@@ -33,12 +35,14 @@ scikit-learn==1.3.2
 ## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/pra-sen-jit/CSI-Week8.git
+cd CSI-Week8
 ```
 
 2. Create a virtual environment (recommended):
+
 ```bash
 python -m venv venv
 # On Windows
@@ -48,6 +52,7 @@ source venv/bin/activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -55,11 +60,13 @@ pip install -r requirements.txt
 ## Usage
 
 1. Start the application:
+
 ```bash
 streamlit run loan_qa_bot.py
 ```
 
 2. Open your web browser and navigate to:
+
    - Local URL: http://localhost:8501
    - The application will automatically open in your default browser
 
@@ -68,6 +75,7 @@ streamlit run loan_qa_bot.py
 ## Features in Detail
 
 ### 1. Data Analysis Capabilities
+
 - Approval rate analysis by various factors
 - Credit history impact assessment
 - Education level influence
@@ -76,6 +84,7 @@ streamlit run loan_qa_bot.py
 - Loan amount patterns
 
 ### 2. Question Types Supported
+
 - Approval chances and factors
 - Credit history impact
 - Education level influence
@@ -85,6 +94,7 @@ streamlit run loan_qa_bot.py
 - Combined factor analysis
 
 ### 3. Technical Implementation
+
 - **Semantic Search**: Uses FAISS for efficient similarity search
 - **Embeddings**: Sentence-BERT (all-MiniLM-L6-v2) for text embeddings
 - **Text Generation**: FLAN-T5 Large for comprehensive responses
@@ -102,6 +112,7 @@ streamlit run loan_qa_bot.py
 ## Data Processing
 
 The system processes loan application data with the following fields:
+
 - Applicant Income
 - Co-applicant Income
 - Loan Amount
@@ -115,6 +126,7 @@ The system processes loan application data with the following fields:
 ## Response Generation
 
 The chatbot uses a sophisticated response generation system that:
+
 1. Retrieves relevant examples using semantic search
 2. Performs statistical analysis of the data
 3. Combines examples and statistics in a detailed prompt
